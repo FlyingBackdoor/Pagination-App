@@ -13,7 +13,11 @@
         android:theme="@style/Theme.PaginationRV"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.PostDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PaginationRV" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,5 +26,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
